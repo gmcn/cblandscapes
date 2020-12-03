@@ -1,0 +1,134 @@
+.page-contact {
+
+  background: #ECEAE6;
+  padding-bottom: 50px;
+
+  @include lg {
+    padding-bottom: 160px;
+  }
+
+  .ruler {
+
+    // width: 2px;
+    border-left: 2px solid #B17E55;
+    position: absolute;
+    right: 25px;
+    top: 150px;
+
+
+    @include lg {
+      top: 450px;
+      height: calc(100% - 450px);
+      right: -25%;
+    }
+
+
+    p {
+      text-transform: uppercase;
+    }
+
+
+  }
+
+
+  // .hero {
+    h1 {
+      font-weight: 200;
+      color: #8C8C48;
+      font-size: 32px;
+      line-height: 1.2em;
+      padding: 150px 15px 50px;
+      display: block;
+      @include md {
+        margin-top: 250px;
+      }
+      @include lg {
+        font-size: 50px !important;
+        position: relative;
+        margin-top: 300px;
+        padding: 150px 15px 150px;
+      }
+      strong {
+        font-weight: 700;
+        display: block;
+      }
+    }
+  // }
+
+  p {
+    color: #8C8C48;
+    font-size: 1.5em;
+    padding: 0 15px;
+
+    @include md {
+      padding: 0;
+    }
+
+  }
+
+  p.info {
+    margin-bottom: 50px;
+    font-weight: 700;
+    @include md {
+      margin-bottom: 100px;
+      // width: 50%;
+    }
+
+  }
+
+  .social {
+    margin-bottom: 50px;
+    padding: 0 15px;
+
+    .wp-block-column {
+      flex-basis: 25% !important;
+    }
+
+  }
+
+  a {
+    color: #8C8C48;
+    font-weight: 300;
+    &:hover {
+      font-weight: 600;
+      color: #8C8C48;
+    }
+  }
+
+  &__form_wrap {
+
+    padding-top: 50px;
+
+    br {
+      display: none;
+    }
+
+    .wpcf7-submit {
+
+      color: #B17E55;
+      @include md {
+        width: calc(100% - 50px);
+      }
+      border: 2px solid #B17E55;
+      padding: 25px;
+      font-size: 55px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 0;
+      transition: .5s;
+
+      &:hover {
+        background-color: #8C8C48;
+        border: 2px solid #B17E55;
+        color: #fff;
+      }
+
+    }
+
+  }
+
+
+
+
+
+}

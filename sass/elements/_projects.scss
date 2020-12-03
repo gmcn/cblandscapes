@@ -1,0 +1,55 @@
+.view-projects {
+
+  background: #F9B877;
+  padding: 25px !important;
+  @include lg {
+    padding: 50px !important;
+  }
+  @include xl {
+    padding: 85px !important;
+  }
+
+
+  img {
+    width: calc(50% - 15px);
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+    @include xl {
+      padding-right: 50px;
+      max-width: calc(50% - 50px);
+      padding-bottom: 0;
+    }
+
+
+  }
+
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #8B5542;
+    font-size: 55px;
+    line-height: 1em;
+    margin-bottom: 50px;
+  }
+
+  a {
+    width: 100%;
+    font-weight: 700;
+    padding: 25px;
+    border: 1px solid #8B5542;
+    color: #8B5542;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+
+    &:hover {
+
+      background: #8B5542;
+      color: #F9B877;
+
+    }
+
+  }
+
+}

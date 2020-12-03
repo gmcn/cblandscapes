@@ -1,0 +1,507 @@
+.hero {
+  background: #ECEAE6;
+  position: relative;
+
+  h1 {
+    font-weight: 200;
+    color: #8C8C48;
+    font-size: 32px;
+    line-height: 1.2em;
+    padding: 150px 15px 50px;
+    @include lg {
+      font-size: 50px !important;
+      position: absolute;
+      bottom: 150px;
+    }
+    strong {
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 100vh;
+    // height: 1000px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+
+}
+
+.lets-chat {
+
+  background: url(images/lets-talk-main_bg.jpg) center center fixed;
+  background-size: cover;
+
+  &_wrapper {
+    background: url(images/lets-talk_bg.svg) center center / cover;
+
+    padding: 50px !important;
+
+    @include md {
+      padding: 75px !important;
+    }
+
+    @include lg {
+      padding: 100px !important;
+    }
+
+    @include xl {
+      padding: 200px !important;
+    }
+
+
+  }
+
+  &__copy {
+
+    background: #ECEAE6;
+
+    color: #474202;
+
+    padding: 50px;
+
+    @include lg {
+      padding: 100px;
+    }
+
+    @include xxl {
+      padding: 150px;
+    }
+
+    h2, h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 3.45em;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-size: 1.25em;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 1.25em;
+    }
+
+    a {
+
+      border: 1px solid #474202;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      padding: 25px;
+      color: #474202;
+      font-size: 1.75em;
+      display: block;
+      margin-top: 50px;
+
+      &:hover {
+        background: rgba(0, 0, 0, .75);
+        color: #fff;
+      }
+
+    }
+
+  }
+
+}
+
+.front-about {
+
+  &_copy {
+    background: #F9B877;
+    color: #8B5542;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    img {
+      margin-bottom: 50px;
+      @include md {
+        margin-bottom: 0;
+      }
+    }
+
+    @include md {
+      padding-bottom: 0;
+    }
+
+    @include lg {
+      padding-top: 150px;
+    }
+
+
+
+    &--img {
+
+      text-align: center;
+
+    }
+
+    &--content {
+
+      h2, h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      h3 {
+        font-size: 3.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      a {
+        margin-top: 50px;
+        color: #8B5542;
+        border: 1px solid #8B5542;
+        display: block;
+        padding: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover {
+          background-color: #8B5542;
+          color: #F9B877;
+        }
+
+      }
+
+    }
+
+
+  }
+
+  &_rings {
+    text-align: right;
+    padding-right: 0 !important;
+  }
+
+}
+
+.front-design, .front-landscape, .front-enjoy {
+
+  h2, h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    @include lg {
+      font-size: 3.5em;
+    }
+
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  a {
+    margin-top: 50px;
+
+    display: block;
+    padding: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      color: #fff;
+    }
+
+  }
+
+}
+
+.front-design {
+  background: url(images/front-design_bg.jpg) right center no-repeat;
+
+  padding: 50px !important;
+
+  @include lg {
+    padding: 100px !important;
+  }
+
+  @include xl {
+    padding: 150px !important;
+  }
+
+  color: #474202;
+
+  p, a {
+
+    @include md {
+      width: 80%;
+    }
+
+  }
+
+  a {
+    color: #474202;
+    border: 1px solid #474202;
+
+    &:hover {
+      background-color: #474202;
+    }
+
+  }
+
+}
+
+.front-landscape {
+
+  color: #F9B877;
+
+  &_copy {
+    background: #8B5542;
+    padding: 50px !important;
+
+    @include lg {
+      padding: 100px !important;
+    }
+
+    @include xl {
+      padding: 150px !important;
+    }
+  }
+
+
+
+  a {
+    color: #F9B877;
+    border: 1px solid #F9B877;
+
+    &:hover {
+      background-color: #F9B877;
+    }
+
+  }
+
+}
+
+.front-enjoy {
+  color: #474202;
+  background: #ECEAE6;
+
+  &_copy {
+
+    padding: 50px !important;
+
+    @include lg {
+      padding: 100px !important;
+    }
+
+    @include xl {
+      padding: 150px !important;
+    }
+
+
+  }
+
+  p, a {
+    @include md {
+      width: 80%;
+    }
+  }
+
+  a {
+    color: #474202;
+    border: 1px solid #474202;
+
+    &:hover {
+      background-color: #474202;
+    }
+
+  }
+
+}
+
+.front-portfolio {
+
+  position: relative;
+  padding-bottom: 100px;
+  background: url(images/portfolio_bg.jpg) #474202;
+
+  .swiper-portfolio {
+
+    text-align: center;
+    color: #8C8C48;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    height: 800px;
+    padding-top: 60px;
+    padding-bottom: 150px;
+
+    &_title {
+      position: absolute;
+      top: 25px;
+
+      @include lg {
+        top: 60px;
+      }
+
+      left: 0;
+      right: 0;
+
+      h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2em;
+        @include md {
+          margin-bottom: 25px;
+        }
+
+      }
+
+      a {
+        color: #8C8C48;
+        font-size: 1.25em;
+        font-weight: 200;
+
+        &:hover {
+          color: #000;
+        }
+
+      }
+
+    }
+
+
+
+    .swiper-slide {
+      // height: 50%;
+      transition: .5s;
+      background: #000;
+      height: 50%;
+
+      &-active, &-duplicate-active {
+        margin-top: 15% !important;
+        height: 80% !important;
+        padding: 0 100px;
+        transition: .5s;
+        transform: scale(1.2);
+      }
+
+      &-next, &-duplicate-next {
+
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+      }
+
+      &-active {
+        height: 100%;
+        transition: .5s;
+        // width: 50% !important;
+      }
+
+    }
+
+  }
+
+
+  .swiper-button-next-unique {
+    right: 25px;
+
+    @include lg {
+      right: 50px;
+    }
+
+  }
+
+  .swiper-button-prev-unique {
+    left: 25px;
+
+    @include lg {
+      left: 50px;
+    }
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .swiper-button-next-unique, .swiper-button-prev-unique {
+    // height: 50px;
+    // width: 50px;
+    padding: 15px;
+    transition: .5s;
+
+    &:hover {
+      background: #fff;
+
+      svg {
+
+        fill: #000;
+
+      }
+
+    }
+
+    @include md {
+      background-color: transparent;
+      padding: 15px;
+    }
+
+    @include xl {
+      padding: 50px;
+    }
+
+    border: 1px solid #8C8C48;
+    background-color: rgba(255,255,255,.75);
+    position: absolute;
+    top: 50%;
+    @include lg {
+      top: 65%;
+    }
+
+    z-index: 1;
+    cursor: pointer;
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: #8C8C48;
+      @include md {
+        fill: #8C8C48;
+      }
+
+    }
+  }
+
+
+}
